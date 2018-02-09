@@ -60,7 +60,7 @@
 
 
 //----------------------沙盒路径---------------------------
-#pragma mark path
+#pragma mark sandbox_path
 #define PATH_OF_APP_HOME    NSHomeDirectory()
 #define PATH_OF_TEMP        NSTemporaryDirectory()
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
@@ -69,7 +69,7 @@
 
 
 //----------------------图片----------------------------
-#pragma mark picture
+#pragma mark picture functions
 // 加载图片，无缓存
 #define IMAGE_FILE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:file ofType:ext]]
 // 加载图片，有缓存
