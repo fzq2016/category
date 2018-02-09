@@ -12,18 +12,13 @@
 
 - (UIViewController *)zq_viewController
 {
-    UIViewController *viewController = nil;  
-    UIResponder *next = self.nextResponder;  // 根据响应者链获取该view的控制器
-    while (next)
-    {
-        if ([next isKindOfClass:[UIViewController class]])
-        {
-            viewController = (UIViewController *)next;      
-            break;    
-        }    
-        next = next.nextResponder;  
-    } 
-    return viewController;
+    for (UIView *next = [self superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder]; // 根据响应者链获取该view的控制器
+        if ([nextResponder isKindOfClass:[UINavigationController class]] || [nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController*)nextResponder;
+        }
+    }
+    return nil;
 }
 
 @end
