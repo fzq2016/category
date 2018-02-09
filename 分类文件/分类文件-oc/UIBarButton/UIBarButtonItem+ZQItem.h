@@ -1,5 +1,5 @@
 //
-//  UIBarButtonItem+Extension.h
+//  UIBarButtonItem+ZQItem.h
 //  
 //
 //  Created by FZQ on 9/20/15.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIBarButtonItem (Extension)
-
+@interface UIBarButtonItem (ZQItem)
 
 /**
  UIBarButtonItem的创建方法
@@ -18,6 +17,6 @@
  @param action 点击后执行的回调
  @return UIBarButtonItem
  */
-+ (instancetype)itemWithImage:(UIImage* )image action:(void(^)())action;
++ (instancetype)zq_itemWithImage:(UIImage* )image action:(void(^)())action;
 
 @end

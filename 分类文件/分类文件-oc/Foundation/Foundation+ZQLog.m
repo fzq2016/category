@@ -1,5 +1,5 @@
 //
-//  NSDictionary+Log.m
+//  NSDictionary+ZQLog.m
 //  
 //
 //  Created by FZQ on 15/11/6.
@@ -9,9 +9,9 @@
 
 #import <Foundation/Foundation.h>
 
-@implementation NSDictionary (Log)
+@implementation NSDictionary (ZQLog)
 
-- (NSString *)descriptionWithLocale:(id)locale
+- (NSString *)zq_descriptionWithLocale:(id)locale
 {
 //    return @"小明和小红是好朋友";
     NSMutableString *string = [NSMutableString string];
@@ -36,9 +36,9 @@
 }
 @end
 
-@implementation NSArray (Log)
+@implementation NSArray (ZQLog)
 
-- (NSString *)descriptionWithLocale:(id)locale
+- (NSString *)zq_descriptionWithLocale:(id)locale
 {
     NSMutableString *string = [NSMutableString string];
     

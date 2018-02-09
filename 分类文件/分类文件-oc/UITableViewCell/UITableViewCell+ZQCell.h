@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+Cell.h
+//  UITableViewCell+ZQCell.h
 //  
 //
 //  Created by FZQ on 16/5/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITableViewCell (Cell)
+@interface UITableViewCell (ZQCell)
 
 /**
  *  封装缓存中取出cell或创建cell的方法,请重写setup方法初始化cell
@@ -29,7 +29,7 @@
  @param model 模型数据
  @return cell
  */
-+ (instancetype)cellWithTableView:(UITableView *)tableView model:(NSObject *)model;
++ (instancetype)zq_cellWithTableView:(UITableView *)tableView model:(NSObject *)model;
 
 
 @end

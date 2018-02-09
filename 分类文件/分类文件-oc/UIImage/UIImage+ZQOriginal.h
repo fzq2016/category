@@ -1,5 +1,5 @@
 //
-//  UIImage+Original.h
+//  UIImage+ZQOriginal.h
 //  
 //
 //  Created by FZQ on 16/3/28.
@@ -8,9 +8,9 @@
     
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Original)
+@interface UIImage (ZQOriginal)
 
 /** 返回不加渲染的图片 */
-+ (instancetype)originalImageNamed:(NSString *)imageName;
++ (instancetype)zq_originalImageNamed:(NSString *)imageName;
 
 @end

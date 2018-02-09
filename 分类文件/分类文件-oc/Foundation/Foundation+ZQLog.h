@@ -1,5 +1,5 @@
 //
-//  NSDictionary+Log.h
+//  NSDictionary+ZQLog.h
 //  
 //
 //  Created by FZQ on 15/11/6.
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (Log)
+@interface NSDictionary (ZQLog)
 
 
 /**
@@ -18,11 +18,11 @@
  @param locale 本地环境
  @return 中文结果
  */
-- (NSString *)descriptionWithLocale:(id)locale;
+- (NSString *)zq_descriptionWithLocale:(id)locale;
 
 @end
 
-@implementation NSArray (Log)
+@implementation NSArray (ZQLog)
 
 
 /**
@@ -31,7 +31,7 @@
  @param locale 本地环境
  @return 中文结果
  */
-- (NSString *)descriptionWithLocale:(id)locale;
+- (NSString *)zq_descriptionWithLocale:(id)locale;
 
 @end
 

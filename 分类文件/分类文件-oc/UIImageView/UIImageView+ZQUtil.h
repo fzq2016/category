@@ -1,5 +1,5 @@
 //
-//  UIImageView+Util.h
+//  UIImageView+ZQUtil.h
 //  
 //
 //  Created by FZQ on 6/16/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView (Util)
+@interface UIImageView (ZQUtil)
 
-- (void)loadPortrait:(NSURL *)portraitURL;
+- (void)zq_loadPortrait:(NSURL *)portraitURL;
 
 @end

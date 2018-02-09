@@ -1,14 +1,14 @@
 //
-//  UITableViewCell+Cell.m
+//  UITableViewCell+ZQCell.m
 //  
 //
 //  Created by FZQ on 16/5/12.
 //  Copyright © 2016年 FZQ. All rights reserved.
 //
 
-#import "UITableViewCell+Cell.h"
+#import "UITableViewCell+ZQCell.h"
 
-@implementation UITableViewCell (Cell)
+@implementation UITableViewCell (ZQCell)
 
 + (instancetype)zq_cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style Identifier:(NSString *)Identifier
 {
@@ -23,7 +23,7 @@
     return cell;
 }
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView model:(NSObject *)model
++ (instancetype)zq_cellWithTableView:(UITableView *)tableView model:(NSObject *)model
 {
     NSAssert(FALSE, @"children class method");
     return nil;

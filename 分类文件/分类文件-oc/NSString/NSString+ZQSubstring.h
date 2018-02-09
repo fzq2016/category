@@ -9,8 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (substring)
-
+@interface NSString (ZQSubstring)
 
 /**
  获取子字符串

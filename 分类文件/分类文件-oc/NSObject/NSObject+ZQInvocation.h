@@ -1,5 +1,5 @@
 //
-//  NSObject+Invocation.h
+//  NSObject+ZQInvocation.h
 //  
 //
 //  Created by FZQ on 16/6/2.
@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Invocation)
+@interface NSObject (ZQInvocation)
 
 
 /**
@@ -20,6 +20,6 @@
  @param objects 参数数组
  @return 任意对象
  */
-- (id)performSelector:(SEL)aSelector withObjects:(NSArray *)objects;
+- (id)zq_performSelector:(SEL)aSelector withObjects:(NSArray *)objects;
 
 @end

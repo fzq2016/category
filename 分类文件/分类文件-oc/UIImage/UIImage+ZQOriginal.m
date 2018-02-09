@@ -1,17 +1,17 @@
 //
-//  UIImage+Original.m
+//  UIImage+ZQOriginal.m
 //  
 //
 //  Created by FZQ on 16/3/28.
 //  Copyright © 2016年 FZQ. All rights reserved.
 //
 
-#import "UIImage+Original.h"
+#import "UIImage+ZQOriginal.h"
 
-@implementation UIImage (Original)
+@implementation UIImage (ZQOriginal)
 
 /** 返回不加渲染的图片 */
-+(instancetype)originalImageNamed:(NSString *)imageName{
++(instancetype)zq_originalImageNamed:(NSString *)imageName{
     //加载图片
     UIImage *image = [UIImage imageNamed:imageName];
     

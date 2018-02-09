@@ -1,31 +1,31 @@
 //
-//  NSMutableURLRequest+Upload.m
+//  NSMutableURLRequest+ZQUpload.m
 //  
 //
 //  Created by FZQ on 16/6/2.
 //  Copyright © 2016年 FZQ. All rights reserved.
 
 
-#import "NSMutableURLRequest+Upload.h"
+#import "NSMutableURLRequest+ZQUpload.h"
 
-@implementation NSMutableURLRequest (Upload)
+@implementation NSMutableURLRequest (ZQUpload)
 
 /****** 单文件上传-服务器的文件名与本地的文件名一致 *****/
-+ (instancetype)requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL name:(NSString *)name {
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL name:(NSString *)name {
     
     // 调用“多文件上传-服务器的文件名与本地的文件名一致”方法
-    return [self requestWithURL:URL fileURLs:@[fileURL] name:name];
+    return [self zq_requestWithURL:URL fileURLs:@[fileURL] name:name];
 }
 
 /****** 单文件上传-服务器的文件名自定义 *****/
-+ (instancetype)requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL fileName:(NSString *)fileName name:(NSString *)name {
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL fileName:(NSString *)fileName name:(NSString *)name {
     
     // 调用“多文件上传-服务器的文件名自定义”方法
-    return [self requestWithURL:URL fileURLs:@[fileURL] fileNames:@[fileName] name:name];
+    return [self zq_requestWithURL:URL fileURLs:@[fileURL] fileNames:@[fileName] name:name];
 }
 
 /****** 多文件上传-服务器的文件名与本地的文件名一致 *****/
-+ (instancetype)requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs name:(NSString *)name {
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs name:(NSString *)name {
     
     // 遍历要上传的本地文件，获取文件名作为服务器的文件名
     NSMutableArray *fileNames = [NSMutableArray arrayWithCapacity:fileURLs.count];
@@ -34,12 +34,12 @@
     }];
     
     // 调用“多文件上传-服务器的文件名自定义”方法
-    return [self requestWithURL:URL fileURLs:fileURLs fileNames:fileNames name:name];
+    return [self zq_requestWithURL:URL fileURLs:fileURLs fileNames:fileNames name:name];
 }
 
 #pragma mark - core code(核心代码)
 /****** 多文件上传-服务器的文件名自定义 *****/
-+ (instancetype)requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs fileNames:(NSArray *)fileNames name:(NSString *)name {
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs fileNames:(NSArray *)fileNames name:(NSString *)name {
     // 由url创建可变request
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     

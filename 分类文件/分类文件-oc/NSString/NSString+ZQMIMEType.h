@@ -10,7 +10,7 @@
 
 @interface NSString (MIMEType)
 
-+ (NSString *)mimeTypeForFileAtPath:(NSString *)path;
-+ (NSString *)getMIMETypeWithPath:(NSString *)path;
++ (NSString *)zq_mimeTypeForFileAtPath:(NSString *)path;
++ (NSString *)zq_getMIMETypeWithPath:(NSString *)path;
 
 @end

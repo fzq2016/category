@@ -1,16 +1,16 @@
 //
-//  UIColor+Util.m
+//  UIColor+ZQUtil.m
 //  
 //
 //  Created by FZQ on 15/11/23.
 //  Copyright © 2015年 FZQ. All rights reserved.
 //
 
-#import "UIColor+Util.h"
+#import "UIColor+ZQUtil.h"
 
-@implementation UIColor (Util)
+@implementation UIColor (ZQUtil)
 
-+ (UIColor *)colorWithHex:(int)hexValue alpha:(CGFloat)alpha
++ (UIColor *)zq_colorWithHex:(int)hexValue alpha:(CGFloat)alpha
 {
     return [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0
                            green:((float)((hexValue & 0xFF00) >> 8))/255.0
@@ -18,25 +18,25 @@
                            alpha:alpha];
 }
 
-+ (UIColor *)colorWithHex:(int)hexValue
++ (UIColor *)zq_colorWithHex:(int)hexValue
 {
-    return [UIColor colorWithHex:hexValue alpha:1.0];
+    return [UIColor zq_colorWithHex:hexValue alpha:1.0];
 }
 
 
 #pragma mark - theme colors
 
-+ (UIColor *)navigationbarColor
++ (UIColor *)zq_navigationbarColor
 {
-    return [UIColor colorWithHex:0x0a5090];
+    return [UIColor zq_colorWithHex:0x0a5090];
 }
 
-+ (UIColor *)uniformColor
++ (UIColor *)zq_uniformColor
 {
     return [UIColor colorWithRed:235.0/255 green:235.0/255 blue:243.0/255 alpha:1.0];
 }
 
-+ (instancetype)colorWithHexString: (NSString *)hex
++ (instancetype)zq_colorWithHexString: (NSString *)hex
 {
     //去掉前后空格换行符
     NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
@@ -70,7 +70,7 @@
     return [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
 }
 
-//+ (NSArray *)colors {
+//+ (NSArray *)zq_colors {
 //    return @[
 //             RGBHex(@"#A0F4B2"),
 //             RGBHex(@"#9FF2F4"),

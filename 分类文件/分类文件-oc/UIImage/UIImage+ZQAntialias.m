@@ -1,17 +1,17 @@
 //
-//  UIImage+Antialias.m
+//  UIImage+ZQAntialias.m
 //  
 //
 //  Created by FZQ on 16/5/12.
 //  Copyright © 2016年 FZQ. All rights reserved.
 
 
-#import "UIImage+Antialias.h"
+#import "UIImage+ZQAntialias.h"
 
-@implementation UIImage (Antialias)
+@implementation UIImage (ZQAntialias)
 
 // 在周边加一个边框为1的透明像素
-- (UIImage *)imageAntialias
+- (UIImage *)zq_imageAntialias
 {
     CGFloat border = 1.0f;
     CGRect rect = CGRectMake(border, border, self.size.width - 2 *border, self.size.height - 2 * border);

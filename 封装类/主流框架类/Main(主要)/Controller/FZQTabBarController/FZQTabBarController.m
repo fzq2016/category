@@ -9,7 +9,7 @@
 #import "FZQTabBarController.h"
 #import "FZQNavController.h"
 #import "FZQTabBar.h"
-#import "UIImage+Original.h"
+#import "UIImage+ZQOriginal.h"
 
 @interface FZQTabBarController ()
 
@@ -114,7 +114,7 @@
     NSString *tempStr = [self getString:className];
     
     //生成item
-    UITabBarItem *item = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage originalImageNamed:[NSString stringWithFormat:@"TabBar_%@_new",tempStr]] selectedImage:[UIImage originalImageNamed:[NSString stringWithFormat:@"TabBar_%@_selected_new",tempStr]]];
+    UITabBarItem *item = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage zq_originalImageNamed:[NSString stringWithFormat:@"TabBar_%@_new",tempStr]] selectedImage:[UIImage zq_originalImageNamed:[NSString stringWithFormat:@"TabBar_%@_selected_new",tempStr]]];
     
     //加入到items中
     [self.items addObject:item];

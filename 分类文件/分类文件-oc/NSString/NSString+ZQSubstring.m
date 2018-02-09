@@ -8,7 +8,7 @@
 
 #import "NSString+ZQSubstring.h"
 
-@implementation NSString (substring)
+@implementation NSString (ZQSubstring)
 
 #pragma mark - substring
 /* 截取字符串 */

@@ -1,5 +1,5 @@
 //
-//  NSMutableURLRequest+Upload.h
+//  NSMutableURLRequest+ZQUpload.h
 //  
 //
 //  Created by FZQ on 16/6/2.
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableURLRequest (Upload)
+@interface NSMutableURLRequest (ZQUpload)
 
 /**
  *  生成单文件上传的 multipart/form-data 请求
@@ -20,7 +20,7 @@
  *
  *  @return multipart/form-data POST 请求，保存到服务器的文件名与本地的文件名一致
  */
-+ (instancetype)requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL name:(NSString *)name;
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL name:(NSString *)name;
 
 /**
  *  生成单文件上传的 multipart/form-data 请求
@@ -32,7 +32,7 @@
  *
  *  @return multipart/form-data POST 请求
  */
-+ (instancetype)requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL fileName:(NSString *)fileName name:(NSString *)name;
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURL:(NSURL *)fileURL fileName:(NSString *)fileName name:(NSString *)name;
 
 /**
  *  生成多文件上传的 multipart/form-data 请求
@@ -43,7 +43,7 @@
  *
  *  @return multipart/form-data POST 请求，保存到服务器的文件名与本地的文件名一致
  */
-+ (instancetype)requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs name:(NSString *)name;
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs name:(NSString *)name;
 
 /**
  *  生成多文件上传的 multipart/form-data 请求
@@ -55,7 +55,7 @@
  *
  *  @return multipart/form-data POST 请求
  */
-+ (instancetype)requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs fileNames:(NSArray *)fileNames name:(NSString *)name;
++ (instancetype)zq_requestWithURL:(NSURL *)URL fileURLs:(NSArray *)fileURLs fileNames:(NSArray *)fileNames name:(NSString *)name;
 
 
 @end

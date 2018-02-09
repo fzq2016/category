@@ -12,33 +12,22 @@ static NSString * const ZQPlaceholderColorKey = @"placeholderLabel.textColor";
 
 @implementation UITextField (ZQPlaceholderColor)
 
-- (void)setPlaceholderColor:(UIColor *)placeholderColor
+- (void)setZq_placeholderColor:(UIColor *)zq_placeholderColor
 {
-    // 提前设置占位文字, 目的 : 让它提前创建placeholderLabel
-    NSString *oldPlaceholder = self.placeholder;
-    self.placeholder = @" ";
+    NSString *oldPlaceholder = self.placeholder; // 记录用户设置的占位颜色
+    self.placeholder = @" "; // 提前设置占位文字, 目的 : 让它提前创建placeholderLabel
     self.placeholder = oldPlaceholder;
     
     // 恢复到默认的占位文字颜色
-    if (placeholderColor == nil) {
-        placeholderColor = [UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22];
+    if (zq_placeholderColor == nil) {
+        zq_placeholderColor = [UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22];
     }
     
     // 设置占位文字颜色
-    [self setValue:placeholderColor forKeyPath:ZQPlaceholderColorKey];
+    [self setValue:zq_placeholderColor forKeyPath:ZQPlaceholderColorKey];
 }
 
-//- (void)setPlaceholderColor:(UIColor *)placeholderColor
-//{
-//    // 提前设置占位文字, 目的 : 让它提前创建placeholderLabel
-//    if (self.placeholder.length == 0) {
-//        self.placeholder = @" ";
-//    }
-//    
-//    [self setValue:placeholderColor forKeyPath:ZQPlaceholderColorKey];
-//}
-
-- (UIColor *)placeholderColor
+- (UIColor *)zq_placeholderColor
 {
     return [self valueForKeyPath:ZQPlaceholderColorKey];
 }

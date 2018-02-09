@@ -1,17 +1,17 @@
 //
-//  NSString+MIMEType.m
+//  NSString+ZQMIMEType.m
 //  
 //
 //  Created by FZQ on 15/11/8.
 //  Copyright © 2015年 FZQ. All rights reserved.
 //
 
-#import "NSString+MIMEType.h"
+#import "NSString+ZQMIMEType.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
-@implementation NSString (MIMEType)
+@implementation NSString (ZQMIMEType)
 
-+ (NSString *)mimeTypeForFileAtPath:(NSString *)path
++ (NSString *)zq_mimeTypeForFileAtPath:(NSString *)path
 {
     if (![[[NSFileManager alloc] init] fileExistsAtPath:path]) {
         return nil;
@@ -26,7 +26,7 @@
     return (__bridge NSString *)(MIMEType);
 }
 
-+ (NSString *)getMIMETypeWithPath:(NSString *)path
++ (NSString *)zq_getMIMETypeWithPath:(NSString *)path
 {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
     NSHTTPURLResponse *res = nil;

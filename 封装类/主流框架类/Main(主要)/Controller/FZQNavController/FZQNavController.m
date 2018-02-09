@@ -7,7 +7,7 @@
 //
 
 #import "FZQNavController.h"
-#import "UIImage+Original.h"
+#import "UIImage+ZQOriginal.h"
 
 @interface FZQNavController ()<UINavigationControllerDelegate>
 
@@ -47,7 +47,7 @@
     //判断是不是导航控制器的根控制器
     if (self.childViewControllers.count != 0) {
         //设置导航条左边按钮
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage originalImageNamed:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage zq_originalImageNamed:@"NavBack"] style:UIBarButtonItemStyleDone target:self action:@selector(back)];
         
         /** 跳转时隐藏标签栏 */
         viewController.hidesBottomBarWhenPushed = YES;

@@ -1,16 +1,16 @@
 //
-//  UIColor+Hex.m
+//  UIColor+ZQHex.m
 //  
 //
 //  Created by FZQ on 15/12/15.
 //  Copyright © 2015年 FZQ. All rights reserved.
 //
 
-#import "UIColor+Hex.h"
+#import "UIColor+ZQHex.h"
 
-@implementation UIColor (Hex)
+@implementation UIColor (ZQHex)
 
-+ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
++ (UIColor *)zq_colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
 {
     //删除字符串中的空格
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
@@ -56,10 +56,10 @@
     return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
 }
 
-//默认alpha值为1
-+ (UIColor *)colorWithHexString:(NSString *)color
+// 默认alpha值为1
++ (UIColor *)zq_colorWithHexString:(NSString *)color
 {
-    return [self colorWithHexString:color alpha:1.0f];
+    return [self zq_colorWithHexString:color alpha:1.0f];
 }
 
 @end

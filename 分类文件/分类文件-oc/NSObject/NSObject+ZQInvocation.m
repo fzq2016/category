@@ -1,17 +1,17 @@
 //
-//  NSObject+Invocation.m
+//  NSObject+ZQInvocation.m
 //  
 //
 //  Created by FZQ on 16/6/2.
 //  Copyright © 2016年 FZQ. All rights reserved.
 
 
-#import "NSObject+Invocation.h"
+#import "NSObject+ZQInvocation.h"
 
-@implementation NSObject (Invocation)
+@implementation NSObject (ZQInvocation)
 
 
-- (id)performSelector:(SEL)aSelector withObjects:(NSArray *)objects
+- (id)zq_performSelector:(SEL)aSelector withObjects:(NSArray *)objects
 {
     SEL selector = aSelector;
     

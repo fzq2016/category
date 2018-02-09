@@ -11,6 +11,7 @@
 @interface UITextField (ZQPlaceholderColor)
 
 /** 占位文字颜色 */
-@property (nonatomic, strong) UIColor *placeholderColor;
+@property (nonatomic, readwrite, strong) UIColor *zq_placeholderColor;
+
 
 @end
