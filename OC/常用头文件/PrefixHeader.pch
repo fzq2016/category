@@ -20,9 +20,11 @@
 
 
 //----------------------全局文件----------------------------
-#import "UIRelatedHeader.h"      // UI相关
-#import "NotificationHeader.h"   // 通知名
-#import "EnumHeader.h"           // 枚举值头文件
+//#import "UIRelatedHeader.h"      // UI相关
+//#import "NotificationHeader.h"   // 通知名
+//#import "EnumHeader.h"           // 枚举值头文件
+//#import "NetworkHeader.h"        // 网络头文件
+//#import "EnvironmentHeader.h"    // 环境参数头文件
 #import "GlobeConst.h"           // 全局变量
 //----------------------自定义文件头----------------------------
 
@@ -109,6 +111,12 @@
 
 //主窗口
 #define KEYWINDOW ([UIApplication sharedApplication].keyWindow)
+
+// 用宏定义检测block是否可用!
+#define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };
+// block self
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 //----------------------其他---------------------------
 
 
