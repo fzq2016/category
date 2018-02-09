@@ -25,6 +25,7 @@
 
 + (instancetype)zq_cellWithTableView:(UITableView *)tableView model:(NSObject *)model
 {
+    // 该方法由子类重写。如果子类没有重写，抛出异常
     NSAssert(FALSE, @"children class method");
     return nil;
 }

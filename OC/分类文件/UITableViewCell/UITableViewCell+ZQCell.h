@@ -11,7 +11,7 @@
 @interface UITableViewCell (ZQCell)
 
 /**
- *  封装缓存中取出cell或创建cell的方法,请重写setup方法初始化cell
+ *  封装缓存中取出cell或通过alloc initWithStyle: reuseIdentifier:创建cell的方法
  *
  *  @param tableView  cell所在的tableView
  *  @param style  cell的类型
@@ -23,7 +23,7 @@
 
 
 /**
- 封装缓存中取出cell或创建cell的方法
+ 封装缓存中取出cell或创建cell的方法,必须由子类重写该方法的实现
 
  @param tableView cell所在的tableView
  @param model 模型数据
