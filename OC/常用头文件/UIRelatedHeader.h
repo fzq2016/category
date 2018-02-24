@@ -15,6 +15,7 @@
 #pragma mark color
 // 背景色
 #define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
+#define BLACK_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 
 //----------------------颜色---------------------------
 
