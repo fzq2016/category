@@ -82,7 +82,7 @@
     //定义变量
     CGFloat btnX;
     CGFloat btnY = 0;
-    CGFloat btnW = SCREEN_WIDTH / self.subviews.count;
+    CGFloat btnW = [UIScreen mainScreen].bounds.size.width / self.subviews.count;
     CGFloat btnH = self.frame.size.height;
     int i = 0;
     

@@ -62,7 +62,7 @@
         [btn sizeToFit];
         
         //设置位置
-        btn.center = CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT * 0.9);
+        btn.center = CGPointMake([UIScreen mainScreen].bounds.size.width * 0.5, [UIScreen mainScreen].bounds.size.height * 0.9);
 
         //设置方法
         [btn addTarget:self action:@selector(skip) forControlEvents:UIControlEventTouchUpInside];
@@ -82,13 +82,13 @@
 - (void)skip
 {
     //切换根控制器
-    KEYWINDOW.rootViewController = [[FZQTabBarController alloc]init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = [[FZQTabBarController alloc]init];
     
     //转场动画
     CATransition *anim = [CATransition animation];
     anim.type = @"rippleEffect";
     anim.duration = 1.0;
-    [KEYWINDOW.layer addAnimation:anim forKey:nil];
+    [[UIApplication sharedApplication].keyWindow.layer addAnimation:anim forKey:nil];
 }
 
 #pragma mark - life cycle
@@ -175,9 +175,9 @@ static NSString * const reuseIdentifier = @"newFeature";
     self.smallTextView = smallTextView;
     
     //位置
-    iconView.center = CGPointMake(SCREEN_WIDTH * (index + 0.5), SCREEN_HEIGHT * 0.4);//图标控件
-    largeTextView.center = CGPointMake(SCREEN_WIDTH * (index + 0.5), SCREEN_HEIGHT * 0.8);//大文本控件
-    smallTextView.center = CGPointMake(SCREEN_WIDTH * (index + 0.5), SCREEN_HEIGHT * 0.85);//小文本控件
+    iconView.center = CGPointMake([UIScreen mainScreen].bounds.size.width * (index + 0.5), [UIScreen mainScreen].bounds.size.height * 0.4);//图标控件
+    largeTextView.center = CGPointMake([UIScreen mainScreen].bounds.size.width * (index + 0.5), [UIScreen mainScreen].bounds.size.height * 0.8);//大文本控件
+    smallTextView.center = CGPointMake([UIScreen mainScreen].bounds.size.width * (index + 0.5), [UIScreen mainScreen].bounds.size.height * 0.85);//小文本控件
 }
 
 #pragma mark - <UIScrollViewDelegate>
@@ -193,7 +193,7 @@ static NSString * const reuseIdentifier = @"newFeature";
     if (balance == 0) return;
     
     //计算当前页面是第几个页面
-    NSInteger index     = offentX / SCREEN_WIDTH;
+    NSInteger index     = offentX / [UIScreen mainScreen].bounds.size.width;
     
     //重新设置引导图片控件
     FZQNewFeature *item = self.items[index];
