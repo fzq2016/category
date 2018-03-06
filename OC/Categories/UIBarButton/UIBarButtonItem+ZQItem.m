@@ -10,7 +10,7 @@
 
 @implementation UIBarButtonItem (ZQItem)
 
-+ (instancetype)zq_itemWithImage:(UIImage* )image action:(void(^)())action {
++ (instancetype)zq_itemWithImage:(UIImage* )image action:(void(^)(void))action {
     UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 32, 32)];
     [button setImage:image forState:UIControlStateNormal];
 //    [button bk_addEventHandler:^(id sender) {

@@ -17,6 +17,6 @@
  @param action 点击后执行的回调
  @return UIBarButtonItem
  */
-+ (instancetype)zq_itemWithImage:(UIImage* )image action:(void(^)())action;
++ (instancetype)zq_itemWithImage:(UIImage* )image action:(void(^)(void))action;
 
 @end

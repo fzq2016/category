@@ -22,7 +22,7 @@
 
 @end
 
-@implementation NSArray (ZQLog)
+@interface NSArray (ZQLog)
 
 
 /**
