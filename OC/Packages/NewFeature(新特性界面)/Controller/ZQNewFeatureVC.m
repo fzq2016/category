@@ -8,7 +8,7 @@
 
 #import "ZQNewFeatureVC.h"
 #import "FZQNewFeature.h"
-#import "FZQTabBarController.h"
+//#import "FZQTabBarController.h"
 
 @interface ZQNewFeatureVC ()
 
@@ -82,7 +82,8 @@
 - (void)skip
 {
     //切换根控制器
-    [UIApplication sharedApplication].keyWindow.rootViewController = [[FZQTabBarController alloc]init];
+//    [UIApplication sharedApplication].keyWindow.rootViewController = [[FZQTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = [[UITabBarController alloc] init];
     
     //转场动画
     CATransition *anim = [CATransition animation];

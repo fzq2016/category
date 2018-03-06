@@ -47,6 +47,8 @@
 //初始化
 -(void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     /** 计算偏移 */
     //左臂、左手移动距离
     self.leftX = - self.leftArm.frame.origin.x ;

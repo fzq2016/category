@@ -7,10 +7,9 @@
 //  这个头文件是单例宏的头文件。在使用时，在合适的位置定义name即可使某类成为单例
 
 
-#ifndef Singleton.h
-#define Singleton.h
+#ifndef Singleton_h
+#define Singleton_h
 
-#if 1
 #define Singleton_H(name) +(instancetype)share##name;
 
 //arc
@@ -81,7 +80,6 @@ return _instance;\
 }
 #endif
 
-#endif
 
+#endif /* Singleton.h */
 
-#endif /* Singleton_h */
