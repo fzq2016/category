@@ -6,6 +6,7 @@
 //  Copyright © 2015年 FZQ. All rights reserved.
 
 #import "EncryptionTools.h"
+#import <CommonCrypto/CommonCrypto.h> // 若放在.h文件，组件化验证时会出错
 
 @interface EncryptionTools()
 @property (nonatomic, assign) int keySize;
