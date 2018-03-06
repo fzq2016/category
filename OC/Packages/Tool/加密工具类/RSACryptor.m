@@ -227,8 +227,8 @@ static const uint8_t privateKeyIdentifier[]		= kPrivateKeyTag;
     CFStringRef passwordRef = (__bridge CFStringRef)password;
     
     // 从 PKCS #12 证书中提取标示和证书
-    SecIdentityRef myIdentity;
-    SecTrustRef myTrust;
+    SecIdentityRef myIdentity = nil;
+    SecTrustRef myTrust = nil;
     const void *keys[] =   {kSecImportExportPassphrase};
     const void *values[] = {passwordRef};
     CFDictionaryRef optionsDictionary = CFDictionaryCreate(NULL, keys, values, 1, NULL, NULL);
