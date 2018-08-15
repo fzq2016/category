@@ -7,7 +7,6 @@
 //
 
 #import "ZQGuideTool.h"
-#import "FZQTabBarController.h"
 
 #pragma mark - 调试标志
 #define WESTARS_DEBUG_FLAG true
