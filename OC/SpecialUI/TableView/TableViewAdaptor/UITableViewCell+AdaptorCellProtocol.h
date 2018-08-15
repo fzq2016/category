@@ -1,0 +1,18 @@
+//
+//  UITableViewCell+AdaptorCellProtocol.h
+//  OYOConsumer
+//
+//  Created by willson on 2018/7/25.
+//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITableViewCell (AdaptorCellProtocol)
+//给cell的参数处理规定类
+@property (nonatomic, strong) NSObject *object;
+
+//返回cell的高度
++ (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)object;
+
+@end
