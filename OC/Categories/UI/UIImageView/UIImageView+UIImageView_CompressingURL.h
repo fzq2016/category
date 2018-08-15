@@ -1,9 +1,9 @@
 //
 //  UIImageView+UIImageView_CompressingURL.h
-//  oyo-ios
+//  iOSBaseProject
 //
-//  Created by Sashi on 04/12/15.
-//  Copyright © 2015 oyo. All rights reserved.
+//  Created by Felix on 04/12/15.
+//  Copyright © 2015 Felix. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

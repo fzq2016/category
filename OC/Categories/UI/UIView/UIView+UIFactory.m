@@ -1,9 +1,9 @@
 //
 //  UIView+UIFactory.m
-//  CBNWeekly
+//  iOSBaseProject
 //
-//  Created by Neo on 14-11-12.
-//  Copyright (c) 2017年 CBN. All rights reserved.
+//  Created by Felix on 18-8-12.
+//  Copyright (c) 2018年 Felix. All rights reserved.
 //
 
 #import "UIView+UIFactory.h"

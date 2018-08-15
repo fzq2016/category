@@ -1,9 +1,9 @@
 //
 //  GCD.h
-//  CBNWeekly
+//  iOSBaseProject
 //
-//  Created by Neo on 15/7/3.
-//  Copyright (c) 2015年 CBN. All rights reserved.
+//  Created by Felix on 15/7/3.
+//  Copyright (c) 2015年 Felix. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

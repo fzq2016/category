@@ -1,9 +1,9 @@
 //
 //  UIAlertController+Call.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by lifengoyo on 2018/7/26.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/7/26.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "UIAlertController+Call.h"

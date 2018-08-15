@@ -1,9 +1,9 @@
 //
 //  UIViewController+Utils.m
-//  Hugo
+//  iOSBaseProject
 //
-//  Created by Neo on 16/8/5.
-//  Copyright © 2016年 CBN. All rights reserved.
+//  Created by Felix on 16/8/5.
+//  Copyright © 2016年 Felix. All rights reserved.
 //
 
 #import "UIViewController+Utils.h"

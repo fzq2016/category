@@ -1,9 +1,9 @@
 //
 //  NSString+ZQSubstring.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 16/6/2.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Created by Felix on 16/6/2.
+//  Copyright © 2016年 Felix. All rights reserved.
 //  该分类文件是增加获取子字符串的方法
 
 

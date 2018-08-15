@@ -1,9 +1,9 @@
 //
 //  OYOCalendarView.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by zhanglei on 2018/7/18.
-//  Copyright © 2018 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/7/18.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "OYOCalendarView.h"

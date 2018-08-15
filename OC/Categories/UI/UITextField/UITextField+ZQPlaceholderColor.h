@@ -1,9 +1,9 @@
 //
 //  UITextField+ZQPlaceholderColor.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/11/9.
-//  Copyright © 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/11/9.
+//  Copyright © 2015年 Felix. All rights reserved.
 //  UITextField占位文字颜色
 
 #import <UIKit/UIKit.h>

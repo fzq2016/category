@@ -1,9 +1,9 @@
 //
 //  AFNetwork.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by chengshaohua on 2018/7/15.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/7/15.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "AFNetwork.h"

@@ -1,9 +1,9 @@
 //
 //  OYOAlignLabel.m
-//  OYOConsumer
+//  iOSBaseProject
 //
 //  Created by shawn on 2018/7/31.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "OYOAlignLabel.h"

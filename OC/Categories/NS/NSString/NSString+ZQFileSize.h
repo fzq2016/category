@@ -1,9 +1,9 @@
 //
 //  NSString+ZQFileSize.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 16/5/16.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Created by Felix on 16/5/16.
+//  Copyright © 2016年 Felix. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -1,9 +1,9 @@
 //
 //  UIPlaceHolderTextView.h
-//  CBNWeekly
+//  iOSBaseProject
 //
-//  Created by Neo on 13-5-21.
-//  Copyright (c) 2013年 CBN. All rights reserved.
+//  Created by Felix on 13-5-21.
+//  Copyright (c) 2013年 Felix. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

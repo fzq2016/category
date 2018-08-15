@@ -1,9 +1,9 @@
 //
 //  UIScrollView+ScrollViewInsets.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by neo on 2018/8/4.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/8/4.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "UIScrollView+ScrollViewInsets.h"

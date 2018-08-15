@@ -1,9 +1,9 @@
 //
 //  NSMutableURLRequest+ZQUpload.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 16/6/2.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Created by Felix on 16/6/2.
+//  Copyright © 2016年 Felix. All rights reserved.
 //  文件上传分类
 
 

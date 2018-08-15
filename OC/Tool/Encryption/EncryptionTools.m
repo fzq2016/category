@@ -1,9 +1,9 @@
 //
 //  EncryptionTools.m
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/11/6.
-//  Copyright © 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/11/6.
+//  Copyright © 2015年 Felix. All rights reserved.
 
 #import "EncryptionTools.h"
 #import <CommonCrypto/CommonCrypto.h> // 若放在.h文件，组件化验证时会出错

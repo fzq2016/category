@@ -1,9 +1,9 @@
 //
 //  OYOAlignLabel.h
-//  OYOConsumer
+//  iOSBaseProject
 //
 //  Created by shawn on 2018/7/31.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Copyright © 2018年 Felix. All rights reserved.
 /*
  UILabel 中 @property(nonatomic) NSTextAlignment    textAlignment，实现的是水平方向的对齐方式；
  竖直方向是默认将文字放在竖直方向的中间显示的。

@@ -1,6 +1,6 @@
 //
 //  NSString+ZQFileSize.m
-//  
+//  iOSBaseProject
 //  该分类用于计算某文件（夹）的大小
 
 

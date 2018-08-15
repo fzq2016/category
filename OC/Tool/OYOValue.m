@@ -1,9 +1,9 @@
 //
 //  OYOValue.m
-//  CBN
+//  iOSBaseProject
 //
-//  Created by Neo on 17-4-3.
-//  Copyright (c) 2017 CBN. All rights reserved.
+//  Created by Felix on 17-4-3.
+//  Copyright (c) 2017 Felix. All rights reserved.
 //
 
 #import "OYOValue.h"

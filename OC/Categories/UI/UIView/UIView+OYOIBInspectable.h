@@ -1,9 +1,9 @@
 //
 //  UIView+OYOIBInspectable.h
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by stephen on 2018/7/21.
-//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/7/21.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,9 +1,9 @@
 //
 //  NSDictionary+ZQPropertyList.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/11/8.
-//  Copyright © 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/11/8.
+//  Copyright © 2015年 Felix. All rights reserved.
 //  快速生成Model属性列表
 
 

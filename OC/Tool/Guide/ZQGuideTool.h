@@ -1,9 +1,9 @@
 //
 //  ZQGuideTool.h
-//  
+//  iOSBaseProject
 //
 //  Created by ZQGuideTool on 16/4/1.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Copyright © 2016年 Felix. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -1,9 +1,9 @@
 //
 //  UIImage+ZQAntialias.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 16/5/12.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Created by Felix on 16/5/12.
+//  Copyright © 2016年 Felix. All rights reserved.
 //  此分类文件是用于生成抗锯齿图片
 
 #import <UIKit/UIKit.h>

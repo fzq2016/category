@@ -1,9 +1,9 @@
 //
 //  UIImage+ZQStretchable.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/6/23.
-//  Copyright (c) 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/6/23.
+//  Copyright (c) 2015年 Felix. All rights reserved.
 //  图片拉伸
 
 #import <UIKit/UIKit.h>

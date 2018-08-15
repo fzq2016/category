@@ -1,9 +1,9 @@
 //
 //  UIImage+ZQOriginal.m
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 16/3/28.
-//  Copyright © 2016年 FZQ. All rights reserved.
+//  Created by Felix on 16/3/28.
+//  Copyright © 2016年 Felix. All rights reserved.
 //
 
 #import "UIImage+ZQOriginal.h"

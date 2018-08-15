@@ -1,9 +1,9 @@
 //
 //  UIColor+ZQHex.m
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/12/15.
-//  Copyright © 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/12/15.
+//  Copyright © 2015年 Felix. All rights reserved.
 //
 
 #import "UIColor+ZQHex.h"

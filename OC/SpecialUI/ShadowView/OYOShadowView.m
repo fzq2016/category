@@ -1,9 +1,9 @@
 //
 //  OYOShadowView.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by zhanglei on 2018/8/1.
-//  Copyright © 2018 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 2018/8/1.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "OYOShadowView.h"

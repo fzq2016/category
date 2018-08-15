@@ -1,9 +1,9 @@
 //
 //  EncryptionTools.h
-//  
+//  iOSBaseProject
 //
-//  Created by FZQ on 15/11/6.
-//  Copyright © 2015年 FZQ. All rights reserved.
+//  Created by Felix on 15/11/6.
+//  Copyright © 2015年 Felix. All rights reserved.
 
 #import <Foundation/Foundation.h>
 

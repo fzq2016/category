@@ -1,9 +1,9 @@
 //
 //  LPaddingLabel.m
-//  OYOConsumer
+//  iOSBaseProject
 //
-//  Created by zhanglei on 25/07/2018.
-//  Copyright © 2018 www.oyohotels.cn. All rights reserved.
+//  Created by Felix on 25/07/2018.
+//  Copyright © 2018年 Felix. All rights reserved.
 //
 
 #import "UIPaddingLabel.h"
