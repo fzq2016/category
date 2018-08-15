@@ -8,13 +8,12 @@
 
 #import "OYOConfigurationCenter.h"
 #import "OYOTabBarController.h"
-
-
-
 #import "OYOBaseNavigationController.h"
 #import "OYOContainer.h"
+#import "HomeViewController.h"
+#import "OtherViewController.h"
 
-static int maxTabCount = 4;
+static int maxTabCount = 2;
 
 @interface OYOConfigurationCenter ()
 @property (nonatomic, strong) UIViewController *rootViewController;
@@ -83,7 +82,7 @@ static OYOConfigurationCenter* instance;
             break;
         }
         case 1:{
-            viewController              = [self orderViewController];
+            viewController              = [self mineViewController];
             break;
         }
         case 2:{
@@ -94,7 +93,8 @@ static OYOConfigurationCenter* instance;
             viewController              = [self mineViewController];
         }
             break;
-        default:break;
+        default:
+            break;
             
     }
     if (viewController) {
@@ -106,7 +106,7 @@ static OYOConfigurationCenter* instance;
 
 - (UIViewController *)homeViewController {
     UIViewController *homeViewController = nil;
-    homeViewController                           = [[UIViewController alloc] init];
+    homeViewController                           = [[HomeViewController alloc] init];
     return homeViewController;
 }
 
@@ -124,7 +124,7 @@ static OYOConfigurationCenter* instance;
 
 - (UIViewController *)mineViewController {
     UIViewController *mineViewController = nil;
-    mineViewController                           = [[UIViewController alloc] init];
+    mineViewController                           = [[OtherViewController alloc] init];
     return mineViewController;
 }
 
