@@ -1,0 +1,51 @@
+//
+//  UIView+OYOIBInspectable.m
+//  OYOConsumer
+//
+//  Created by stephen on 2018/7/21.
+//  Copyright © 2018年 www.oyohotels.cn. All rights reserved.
+//
+
+#import "UIView+OYOIBInspectable.h"
+
+@implementation UIView (OYOIBInspectable)
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    self.layer.borderColor = borderColor.CGColor;
+}
+
+- (UIColor *)borderColor
+{
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+- (CGFloat)cornerRadius
+{
+    return [objc_getAssociatedObject(self, @selector(cornerRadius)) floatValue];
+}
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
+    objc_setAssociatedObject(self, @selector(cornerRadius), @(cornerRadius), OBJC_ASSOCIATION_ASSIGN);
+}
+
+
+- (CGFloat)borderWidth
+{
+    return [objc_getAssociatedObject(self, @selector(borderWidth)) floatValue];
+}
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)shaperLayerbyRoundingCorners:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:cornerRadii];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+@end
