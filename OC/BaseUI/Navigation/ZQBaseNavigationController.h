@@ -1,5 +1,5 @@
 //
-//  OYOBaseNavigationController.h
+//  ZQBaseNavigationController.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OYOBaseNavigationController : UINavigationController
+@interface ZQBaseNavigationController : UINavigationController
 
 @end

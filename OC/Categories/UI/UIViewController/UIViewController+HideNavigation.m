@@ -16,7 +16,7 @@
     [UIApplication sharedApplication].statusBarHidden = isHidden;
 }
 
--(void)setIsStatusBarDefault:(BOOL)isStatusBarDefault{
+- (void)setIsStatusBarDefault:(BOOL)isStatusBarDefault{
     if (isStatusBarDefault){
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     }else{

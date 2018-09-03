@@ -1,5 +1,5 @@
 //
-//  OYOValue.h
+//  ZQIllegalValueManager.h
 //  iOSBaseProject
 //
 //  Created by Felix on 17-4-3.
@@ -12,7 +12,7 @@
  * Get value from NSNumber or NSString safely.
  *
  */
-@interface OYOValue : NSObject
+@interface ZQIllegalValueManager : NSObject
 
 BOOL ftIntVal(int *var, id obj);
 BOOL ftUIntVal(unsigned int *var, id obj);

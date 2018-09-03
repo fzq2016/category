@@ -60,9 +60,9 @@ CGFloat const kAnimationPopModelViewTag = 2018221;
 {
 #if TARGET_IPHONE_SIMULATOR
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"模拟器不支持" preferredStyle:UIAlertControllerStyleAlert];
-    OYOWeakSelf
+    kWeakSelf
     [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        OYOStrongSelf
+        kStrongSelf
         [self dismissViewControllerAnimated:YES completion:nil];
     }]];
     [self presentViewController:alertController animated:YES completion:nil];

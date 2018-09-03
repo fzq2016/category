@@ -8,7 +8,7 @@
 
 #import "OYOConfigurationCenter.h"
 #import "OYOTabBarController.h"
-#import "OYOBaseNavigationController.h"
+#import "ZQBaseNavigationController.h"
 #import "OYOContainer.h"
 #import "HomeViewController.h"
 #import "OtherViewController.h"
@@ -16,11 +16,13 @@
 static int maxTabCount = 2;
 
 @interface OYOConfigurationCenter ()
+
 @property (nonatomic, strong) UIViewController *rootViewController;
+
 @end
 
 @implementation OYOConfigurationCenter
-@synthesize rootViewController      = _rootViewController;
+
 
 static OYOConfigurationCenter* instance;
 
@@ -39,28 +41,30 @@ static OYOConfigurationCenter* instance;
     return _rootViewController;
 }
 
-- (OYOBaseNavigationController *)navigationController {
-    OYOBaseNavigationController *navigationController = nil;
+- (ZQBaseNavigationController *)navigationController {
+    ZQBaseNavigationController *navigationController = nil;
+    
     UIViewController *rootController = [self tabbarController];
     [OYOContainer global].tabbarController = (OYOTabBarController *)rootController;
-    navigationController = [[OYOBaseNavigationController alloc] initWithRootViewController:rootController];
-    //设置 TO DO :someProperty navigationBar
+    
+    navigationController = [[ZQBaseNavigationController alloc] initWithRootViewController:rootController];
+    
     return navigationController;
 }
 
 - (OYOTabBarController *)tabbarController {
     if (!_tabbarController) {
         _tabbarController = [[OYOTabBarController alloc] init];
-        _tabbarController.viewControllers = [self OYOViewControllerts];
+        _tabbarController.viewControllers = [self getBusinessViewControllerts];
         _tabbarController.delegate = self;
         _tabbarController.selectedIndex = 0;
         _tabbarController.view.backgroundColor = [UIColor whiteColor];
     }
-    //custom other: TO DO
+    
     return _tabbarController;
 }
 
-- (NSArray *)OYOViewControllerts {
+- (NSArray *)getBusinessViewControllerts {
     NSMutableArray * controllers                = [NSMutableArray arrayWithCapacity:maxTabCount];
     for (int i = 0; i < maxTabCount; i++) {
         UIViewController * controller           = [self viewControllerForTabIndex:i];
@@ -105,31 +109,29 @@ static OYOConfigurationCenter* instance;
 }
 
 - (UIViewController *)homeViewController {
-    UIViewController *homeViewController = nil;
-    homeViewController                           = [[HomeViewController alloc] init];
-    return homeViewController;
+    
+    return [HomeViewController zq_viewController];
 }
 
 - (UIViewController *)orderViewController {
-    UIViewController *orderViewController = nil;
-    orderViewController                           = [[UIViewController alloc] init];
-    return orderViewController;
+
+    return [UIViewController zq_viewController];
 }
 
 - (UIViewController *)feedbackViewController {
-    UIViewController *feedbackViewController = nil;
-    feedbackViewController                           = [[UIViewController alloc] init];
-    return feedbackViewController;
+    return [UIViewController zq_viewController];
 }
 
 - (UIViewController *)mineViewController {
-    UIViewController *mineViewController = nil;
-    mineViewController                           = [[OtherViewController alloc] init];
-    return mineViewController;
+    
+    return [OtherViewController zq_viewController];
 }
 
 - (UITabBarItem *)createTabbarItem:(NSInteger)index {
-    NSArray *titleArray = @[kLocalString(@"LANG_TAB_HOME"),kLocalString(@"LANG_TAB_ORDER"),kLocalString(@"LANG_TAB_FEEDBACK"),kLocalString(@"LANG_TAB_MINE")];
+    NSArray *titleArray = @[kLocalString(@"LANG_TAB_HOME", @"首页"),
+                            kLocalString(@"LANG_TAB_ORDER", @"订单"),
+                            kLocalString(@"LANG_TAB_FEEDBACK", @"反馈"),
+                            kLocalString(@"LANG_TAB_MINE", @"我的")];
     
     NSArray *imageArray = @[@"homeTabbar",@"orderTabbar",@"feedback",@"mineTabbar"];
     NSArray *selectArry = @[@"homeTabbarSelected",@"orderTabbarSelected",@"feedbackSelected",@"mineTabbarSelected"];

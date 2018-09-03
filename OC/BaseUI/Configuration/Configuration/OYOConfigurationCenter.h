@@ -16,7 +16,18 @@
 
 @property (nonatomic, strong) OYOTabBarController *tabbarController;
 
+/**
+    根控制器
+
+ @return UIViewController
+ */
 - (UIViewController *)rootViewController;
 
+/**
+    单例
+
+ @return OYOConfigurationCenter
+ */
 + (instancetype)sharedInstance;
+
 @end

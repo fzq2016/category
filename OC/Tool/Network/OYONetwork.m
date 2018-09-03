@@ -537,7 +537,7 @@
     req.reqHeaderType = OYOFormHeaderType;
     NSAssert(reqBlock, @"请先配置下载文件的路径");
     reqBlock(req);
-    OYOWeakSelf
+    kWeakSelf
     
     NSString *url = [self buildRequestUrl:req];
     AFHTTPRequestSerializer *requestSerializer = [self requestSerializerForRequest:req];
@@ -554,7 +554,7 @@
             return [NSURL fileURLWithPath:fileName];
         }
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        OYOStrongSelf
+        kStrongSelf
         [self handleDownload:task filePath:filePath req:req error:error];
     }];
     [task resume];

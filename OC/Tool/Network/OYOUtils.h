@@ -45,7 +45,7 @@ NSString * oyo_timeInterval(void);
 /**
  Dissmiss keyboard
  */
-void dismissKeyboard();
+void dismissKeyboard(void);
 
 /**
  *  Return the path of file in cache directory
@@ -85,7 +85,7 @@ void oyo_dismissHUD(void);
 
 void oyo_dismissHUDInView(UIView *supView);
 
-void oyo_showAlertAction(NSString *msg, void(^sureBlock)());
+void oyo_showAlertAction(NSString *msg, void(^sureBlock)(UIAlertAction *action));
 
 #pragma mark - notification -
 /**

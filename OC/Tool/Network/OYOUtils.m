@@ -193,7 +193,7 @@ void oyo_showHUDWithStatus(NSString *status) {
     }
 }
 
-void oyo_showAlertAction(NSString *msg, void(^sureBlock)()) {
+void oyo_showAlertAction(NSString *msg, void(^sureBlock)(UIAlertAction *action)) {
     UIViewController *topController = oyo_topViewController();
     if (!topController) {
         topController = [UIApplication sharedApplication].keyWindow.rootViewController;

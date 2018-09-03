@@ -1,24 +1,24 @@
  //
-//  OYOBaseNavigationController.m
+//  ZQBaseNavigationController.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/6.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "OYOBaseNavigationController.h"
+#import "ZQBaseNavigationController.h"
 
-@interface OYOBaseNavigationController ()<UIGestureRecognizerDelegate, UINavigationControllerDelegate>
+@interface ZQBaseNavigationController ()<UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
 @end
 
-@implementation OYOBaseNavigationController
+@implementation ZQBaseNavigationController
 
 ///** 初始化类时统一对导航控制器设置 */
 //+(void)initialize
 //{
 //    // 当前类初始化的时候才会调用,子类调用时不初始化
-//    if (self == [FZQNavController class]) {
+//    if (self == [ZQBaseNavigationController class]) {
 //
 //    //获取当前类下面所有导航条
 //    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:self, nil];

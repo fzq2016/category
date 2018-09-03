@@ -1,16 +1,16 @@
 //
-//  OYOValue.m
+//  ZQIllegalValueManager.m
 //  iOSBaseProject
 //
 //  Created by Felix on 17-4-3.
 //  Copyright (c) 2017 Felix. All rights reserved.
 //
 
-#import "OYOValue.h"
+#import "ZQIllegalValueManager.h"
 
 static NSNumberFormatter *__sharedNumberFormatter = nil;
 
-@implementation OYOValue
+@implementation ZQIllegalValueManager
 
 + (void)load
 {
