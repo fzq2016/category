@@ -1,5 +1,5 @@
 //
-//  UIResponder+Event.h
+//  UIResponder+ZQEvent.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIResponder (Event)
+@interface UIResponder (ZQEvent)
 
 /**
     响应链事件传递。由最后实现该方法的类执行响应，如果没有响应者，则这个行为抛空

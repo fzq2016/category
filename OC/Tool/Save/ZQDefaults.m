@@ -1,14 +1,14 @@
 //
-//  OYODefaults.m
+//  ZQDefaults.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/7.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "OYODefaults.h"
+#import "ZQDefaults.h"
 
-@implementation OYODefaults
+@implementation ZQDefaults
 
 + (void)setObject:(NSObject *)value forKey:(NSString *)key{
     if(!key || !value){

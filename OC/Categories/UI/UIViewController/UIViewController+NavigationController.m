@@ -49,7 +49,7 @@ static char leftNavItemkey;
 }
 
 - (BOOL)isHideCustomStatusbar{
-    return OYOBool(objc_getAssociatedObject(self, _cmd));
+    return ZQBool(objc_getAssociatedObject(self, _cmd));
 }
 
 - (void)setIsHideCustomStatusbar:(BOOL)isHideCustomStatusbar{
@@ -100,7 +100,7 @@ static char leftNavItemkey;
 }
 
 - (BOOL)isSystemNavigation{
-    return OYOBool(objc_getAssociatedObject(self, _cmd));
+    return ZQBool(objc_getAssociatedObject(self, _cmd));
 }
 
 - (void)setIsSystemNavigation:(BOOL)isSystemNavigation{

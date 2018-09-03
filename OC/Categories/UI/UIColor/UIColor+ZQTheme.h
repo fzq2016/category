@@ -1,5 +1,5 @@
 //
-//  UIColor+Theme.h
+//  UIColor+ZQTheme.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/8/10.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (Theme)
+@interface UIColor (ZQTheme)
 
 UIColor * themeBackgroundColor();
 

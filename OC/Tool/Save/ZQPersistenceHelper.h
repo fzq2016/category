@@ -1,5 +1,5 @@
 //
-//  OYOPersistenceHelper.h
+//  ZQPersistenceHelper.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/19.
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, PersistenceType) {
     PersistenceTypePlist = 3,
     PersistenceTypeNone = 3,
 } ;
-@interface OYOPersistenceHelper : NSObject
+@interface ZQPersistenceHelper : NSObject
 
 + (void)saveData:(id)data
         filename:(NSString *)filename

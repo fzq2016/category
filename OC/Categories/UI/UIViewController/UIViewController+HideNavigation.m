@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+HideNavigation.h"
-#import "UIImage+Helper.h"
+#import "UIImage+ZQHelper.h"
 
 @implementation UIViewController (HideNavigation)
 @dynamic isStatusBarDefault;

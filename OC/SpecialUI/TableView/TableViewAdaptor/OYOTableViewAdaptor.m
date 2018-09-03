@@ -27,16 +27,16 @@
 - (void)setTableView:(UITableView *)tableView {
     _tableView = tableView;
     
-    OYOWeakSelf
+    kWeakSelf
     MJRefreshHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
-        OYOStrongSelf
+        kStrongSelf
         if (self.headerRefreshBlock) {
             self.headerRefreshBlock();
         }
     }];
     
     MJRefreshBackGifFooter *footer = [MJRefreshBackGifFooter footerWithRefreshingBlock:^{
-        OYOStrongSelf
+        kStrongSelf
         if (self.footerRefreshBlock) {
             self.footerRefreshBlock();
         }

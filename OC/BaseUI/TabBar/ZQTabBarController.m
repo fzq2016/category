@@ -1,18 +1,18 @@
 //
-//  OYOTabBarController.m
+//  ZQTabBarController.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/12.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "OYOTabBarController.h"
+#import "ZQTabBarController.h"
 
-@interface OYOTabBarController ()<UITabBarDelegate, UITabBarControllerDelegate/*, OYONavigatorProtocol*/>
+@interface ZQTabBarController ()<UITabBarDelegate, UITabBarControllerDelegate/*, OYONavigatorProtocol*/>
 
 @end
 
-@implementation OYOTabBarController
+@implementation ZQTabBarController
 
 #pragma mark - Init && Dealloc
 - (instancetype)initWithQuery:(NSDictionary *)query {

@@ -1,5 +1,5 @@
 //
-//  GCD.h
+//  ZQGCD.h
 //  iOSBaseProject
 //
 //  Created by Felix on 15/7/3.

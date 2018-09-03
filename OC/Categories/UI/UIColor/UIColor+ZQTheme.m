@@ -1,15 +1,15 @@
 
 //
-//  UIColor+Theme.m
+//  UIColor+ZQTheme.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/8/10.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "UIColor+Theme.h"
+#import "UIColor+ZQTheme.h"
 
-@implementation UIColor (Theme)
+@implementation UIColor (ZQTheme)
 #pragma mark - Chameleon - Getter & Setter Methods for Instance Variables
 
 + (void)setGradientImage:(UIImage *)gradientImage {
@@ -24,7 +24,7 @@
 
 
 UIColor * themeBackgroundColor(){
-//    return OYOColor(@"background_color").color;
+//    return ZQColor(@"background_color").color;
     return [UIColor whiteColor];
 }
 

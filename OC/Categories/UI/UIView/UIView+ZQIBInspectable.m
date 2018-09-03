@@ -1,14 +1,14 @@
 //
-//  UIView+OYOIBInspectable.m
+//  UIView+ZQIBInspectable.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/21.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "UIView+OYOIBInspectable.h"
+#import "UIView+ZQIBInspectable.h"
 
-@implementation UIView (OYOIBInspectable)
+@implementation UIView (ZQIBInspectable)
 
 - (void)setBorderColor:(UIColor *)borderColor
 {

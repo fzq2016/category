@@ -34,12 +34,12 @@
 }
 
 - (void)initTableView {
-//    OYOWeakSelf
+//    kWeakSelf
 //    kLazyLoad(_unQueryLabel, {
 //        _unQueryLabel = Label.string(@"暂无数据").withFont(kFontLight(14)).color(@"#666666").centerAlignment;
 //        [self addSubview:_unQueryLabel];
 //        [_unQueryLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//            OYOStrongSelf
+//            kStrongSelf
 //            make.centerX.equalTo(self);
 //        }];
 //        _unQueryLabel;
@@ -51,9 +51,9 @@
     [super setDataSource:(id<UITableViewDataSource>)self.dataSourceProxy];
     self.tableFooterView = [UIView new];
     
-//    OYOWeakSelf
+//    kWeakSelf
 //    [[RACObserve(self, models) skip:1] subscribeNext:^(id  _Nullable x) {
-//        OYOStrongSelf
+//        kStrongSelf
 //        if (self.mj_header.isRefreshing) {
 //            [self.mj_header endRefreshing];
 //        }

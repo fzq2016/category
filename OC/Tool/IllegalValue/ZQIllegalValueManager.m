@@ -24,13 +24,13 @@ static NSNumberFormatter *__sharedNumberFormatter = nil;
 
 @end
 
-NSString *OYOString(id obj) {
+NSString *ZQString(id obj) {
     NSString *str = @"";
-    return OYOStringWith(obj, str);
+    return ZQStringWith(obj, str);
 }
 
 
-NSString *OYOStringWith(id obj,NSString *placeholder) {
+NSString *ZQStringWith(id obj,NSString *placeholder) {
     NSString *str = placeholder;
     ftStringVal(&str, obj);
     return str;
@@ -38,51 +38,51 @@ NSString *OYOStringWith(id obj,NSString *placeholder) {
 
 
 
-NSInteger OYOInteger(id obj) {
+NSInteger ZQInteger(id obj) {
     NSInteger i = 0;
-    return OYOIntegerWith(obj, i);
+    return ZQIntegerWith(obj, i);
 }
 
-NSInteger OYOIntegerWith(id obj,NSInteger placeholder) {
+NSInteger ZQIntegerWith(id obj,NSInteger placeholder) {
     NSInteger i = placeholder;
     ftIntegerVal(&i, obj);
     return i;
 }
 
-float OYOFloat(id obj) {
+float ZQFloat(id obj) {
     float f = 0.0;
-    return OYOFloatWith(obj, f);
+    return ZQFloatWith(obj, f);
 }
 
-float OYOFloatWith(id obj,float placeholder) {
+float ZQFloatWith(id obj,float placeholder) {
     float f = placeholder;
     ftFloatVal(&f, obj);
     return f;
 }
 
-double OYODouble(id obj) {
+double ZQDouble(id obj) {
     double d = 0.00000;
-    return OYODoubleWith(obj, d);
+    return ZQDoubleWith(obj, d);
 }
 
-double OYODoubleWith(id obj,double placeholder) {
+double ZQDoubleWith(id obj,double placeholder) {
     double d = placeholder;
     ftDoubleVal(&d, obj);
     return d;
 }
 
-BOOL OYOBool(id obj) {
+BOOL ZQBool(id obj) {
     BOOL flag = FALSE;
-    return OYOBoolWith(obj, flag);
+    return ZQBoolWith(obj, flag);
 }
 
-BOOL OYOBoolWith(id obj,BOOL placeholder) {
+BOOL ZQBoolWith(id obj,BOOL placeholder) {
     BOOL flag = placeholder;
     ftBoolVal(&flag, obj);
     return flag;
 }
 
-NSDictionary *OYONoneNullDictionary(id object){
+NSDictionary *ZQNoneNullDictionary(id object){
     if (isNSDictionary(object)) {
         NSDictionary *dict = (NSDictionary *)object;
         NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
@@ -96,21 +96,21 @@ NSDictionary *OYONoneNullDictionary(id object){
     return nil;
 }
 
-NSArray *OYONoneNullArray(id object){
+NSArray *ZQNoneNullArray(id object){
     if (isNSArray(object)) {
         NSArray *array = (NSArray *)object;
         NSMutableArray *tempArray = [NSMutableArray array];
         [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (obj && obj != [NSNull null] ) {
                 if ([obj isKindOfClass:[NSDictionary class]]) {
-                    NSDictionary *subDict = OYONoneNullDictionary(obj);
+                    NSDictionary *subDict = ZQNoneNullDictionary(obj);
                     if (subDict) {
                         if (![tempArray containsObject:subDict]) {
                             [tempArray addObject:subDict];
                         }
                     }
                 }else if([obj isKindOfClass:[NSArray class]]){
-                    NSArray *array = OYONoneNullArray(obj);
+                    NSArray *array = ZQNoneNullArray(obj);
                     if (array) {
                         if (![tempArray containsObject:array]) {
                             [tempArray addObject:array];
@@ -127,7 +127,7 @@ NSArray *OYONoneNullArray(id object){
 }
 
 
-NSDictionary *OYODictionaryWith(id obj,NSDictionary *placeholder)
+NSDictionary *ZQDictionaryWith(id obj,NSDictionary *placeholder)
 {
     if (!isNSDictionary(obj) || ((NSDictionary *)obj).allKeys.count == 0) {
         return placeholder;
@@ -143,7 +143,7 @@ BOOL isNSDictionary(id obj)
         return NO;
 }
 
-NSArray *OYOArrayWith(id obj,NSArray *placeholder){
+NSArray *ZQArrayWith(id obj,NSArray *placeholder){
     if (!isNSArray(obj) || ((NSArray *)obj).count == 0) {
         return placeholder;
     }

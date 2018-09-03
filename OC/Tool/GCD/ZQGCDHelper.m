@@ -1,12 +1,12 @@
 //
-//  GCD.m
+//  ZQGCD.m
 //  iOSBaseProject
 //
 //  Created by Felix on 15/7/3.
 //  Copyright (c) 2015年 Felix. All rights reserved.
 //
 
-#import "GCDHelper.h"
+#import "ZQGCDHelper.h"
 
 inline void onMain(dispatch_block_t block)
 {

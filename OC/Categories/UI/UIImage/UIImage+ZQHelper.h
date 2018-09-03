@@ -1,5 +1,5 @@
 //
-//  UIImage+Helper.h
+//  UIImage+ZQHelper.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Helper)
+@interface UIImage (ZQHelper)
 
 + (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size;
 + (UIImage *)imageWithColor:(UIColor *)color;

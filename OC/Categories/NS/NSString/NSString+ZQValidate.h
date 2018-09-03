@@ -1,5 +1,5 @@
 //
-//  NSString+Validate.h
+//  NSString+ZQValidate.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/8/6.
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, NSStringValidatePattern) {
     NSStringValidatePatternEmail,       //校验是否是邮箱
 };
 
-@interface NSString (Validate)
+@interface NSString (ZQValidate)
 
 
 /**

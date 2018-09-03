@@ -51,21 +51,21 @@ BOOL ftURLVal(NSURL **var, id obj);
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
 
-NSString *OYOString(id obj);
-NSString *OYOStringWith(id obj,NSString *placeholder);
-NSInteger OYOInteger(id obj);
-NSInteger OYOIntegerWith(id obj,NSInteger placeholder);
-float OYOFloat(id obj);
-float OYOFloatWith(id obj,float placeholder);
-double OYODouble(id obj);
-double OYODoubleWith(id obj,double placeholder);
-BOOL OYOBool(id obj);
-BOOL OYOBoolWith(id obj,BOOL placeholder);
+NSString *ZQString(id obj);
+NSString *ZQStringWith(id obj,NSString *placeholder);
+NSInteger ZQInteger(id obj);
+NSInteger ZQIntegerWith(id obj,NSInteger placeholder);
+float ZQFloat(id obj);
+float ZQFloatWith(id obj,float placeholder);
+double ZQDouble(id obj);
+double ZQDoubleWith(id obj,double placeholder);
+BOOL ZQBool(id obj);
+BOOL ZQBoolWith(id obj,BOOL placeholder);
 BOOL isNSDictionary(id obj);
-NSDictionary *OYODictionaryWith(id obj,NSDictionary *placeholder);
+NSDictionary *ZQDictionaryWith(id obj,NSDictionary *placeholder);
 BOOL isNSArray(id obj);
-NSArray *OYOArrayWith(id obj,NSArray *placeholder);
+NSArray *ZQArrayWith(id obj,NSArray *placeholder);
 
-NSDictionary *OYONoneNullDictionary(id obj);
-NSArray *OYONoneNullArray(id obj);
+NSDictionary *ZQNoneNullDictionary(id obj);
+NSArray *ZQNoneNullArray(id obj);
 

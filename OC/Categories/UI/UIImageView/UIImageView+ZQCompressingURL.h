@@ -1,5 +1,5 @@
 //
-//  UIImageView+UIImageView_CompressingURL.h
+//  UIImageView+ZQCompressingURL.h
 //  iOSBaseProject
 //
 //  Created by Felix on 04/12/15.
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, ImageCompressionType) {
     imageCompressionTypeLarge = 3,
 };
 
-@interface UIImageView (UIImageView_CompressingURL)
+@interface UIImageView (ZQCompressingURL)
 
 /**
  *  returns all the compressed urls for a url

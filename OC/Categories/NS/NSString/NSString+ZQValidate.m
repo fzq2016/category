@@ -1,14 +1,14 @@
 //
-//  NSString+Validate.m
+//  NSString+ZQValidate.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/8/6.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "NSString+Validate.h"
+#import "NSString+ZQValidate.h"
 
-@implementation NSString (Validate)
+@implementation NSString (ZQValidate)
 
 #pragma mark - public selector
 + (BOOL)validateString:(NSString *)string pattern:(NSStringValidatePattern)pattern {

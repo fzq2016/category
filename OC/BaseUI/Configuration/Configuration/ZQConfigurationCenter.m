@@ -1,35 +1,34 @@
 //
-//  OYOConfigurationCenter.m
+//  ZQConfigurationCenter.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/12.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "OYOConfigurationCenter.h"
-#import "OYOTabBarController.h"
+#import "ZQConfigurationCenter.h"
+#import "ZQTabBarController.h"
 #import "ZQBaseNavigationController.h"
-#import "OYOContainer.h"
 #import "HomeViewController.h"
 #import "OtherViewController.h"
 
 static int maxTabCount = 2;
 
-@interface OYOConfigurationCenter ()
+@interface ZQConfigurationCenter ()
 
 @property (nonatomic, strong) UIViewController *rootViewController;
 
 @end
 
-@implementation OYOConfigurationCenter
+@implementation ZQConfigurationCenter
 
 
-static OYOConfigurationCenter* instance;
+static ZQConfigurationCenter* instance;
 
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[OYOConfigurationCenter alloc] init];
+        instance = [[ZQConfigurationCenter alloc] init];
     });
     return instance;
 }
@@ -45,16 +44,16 @@ static OYOConfigurationCenter* instance;
     ZQBaseNavigationController *navigationController = nil;
     
     UIViewController *rootController = [self tabbarController];
-    [OYOContainer global].tabbarController = (OYOTabBarController *)rootController;
+    [ZQContainer global].tabbarController = (ZQTabBarController *)rootController;
     
     navigationController = [[ZQBaseNavigationController alloc] initWithRootViewController:rootController];
     
     return navigationController;
 }
 
-- (OYOTabBarController *)tabbarController {
+- (ZQTabBarController *)tabbarController {
     if (!_tabbarController) {
-        _tabbarController = [[OYOTabBarController alloc] init];
+        _tabbarController = [[ZQTabBarController alloc] init];
         _tabbarController.viewControllers = [self getBusinessViewControllerts];
         _tabbarController.delegate = self;
         _tabbarController.selectedIndex = 0;

@@ -1,14 +1,14 @@
 //
-//  UIImage+Helper.m
+//  UIImage+ZQHelper.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/17.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "UIImage+Helper.h"
+#import "UIImage+ZQHelper.h"
 
-@implementation UIImage (Helper)
+@implementation UIImage (ZQHelper)
 
 + (UIImage *)imageWithColor:(UIColor *)color
 {

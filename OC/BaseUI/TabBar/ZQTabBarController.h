@@ -1,5 +1,5 @@
 //
-//  OYOTabBarController.h
+//  ZQTabBarController.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OYOTabBarController : UITabBarController
+@interface ZQTabBarController : UITabBarController
 
 @end

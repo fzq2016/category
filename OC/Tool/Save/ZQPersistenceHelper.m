@@ -1,23 +1,23 @@
 
 //
-//  OYOPersistenceHelper.m
+//  ZQPersistenceHelper.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/19.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "OYOPersistenceHelper.h"
-#import "OYODefaults.h"
+#import "ZQPersistenceHelper.h"
+#import "ZQDefaults.h"
 
-@implementation OYOPersistenceHelper
+@implementation ZQPersistenceHelper
 
 + (void)saveData:(id)data filename:(NSString *)filename type:(PersistenceType)type{
-    if (!data || OYOString(filename).length < 1) {
+    if (!data || ZQString(filename).length < 1) {
         return;
     }
     if (type == PersistenceTypeUserDefaults) {
-        [OYODefaults setObject:data forKey:filename];
+        [ZQDefaults setObject:data forKey:filename];
     }else{
         NSString *filePath = [self pathSuffix:filename type:type];
         if (type == PersistenceTypeArchive) {
@@ -47,11 +47,11 @@
 }
 
 + (void)updateData:(id)data name:(NSString *)filename type:(PersistenceType)type{
-    if (!data || OYOString(filename).length < 1) {
+    if (!data || ZQString(filename).length < 1) {
         return;
     }
     if (type == PersistenceTypeUserDefaults) {
-        [OYODefaults setObject:data forKey:filename];
+        [ZQDefaults setObject:data forKey:filename];
     }else{
         NSString *filePath = [self pathSuffix:filename type:type];
         if ([[NSFileManager defaultManager] fileExistsAtPath: filePath] && [[NSFileManager defaultManager] isDeletableFileAtPath:filename]) {
@@ -80,11 +80,11 @@
 }
 
 + (id)getData:(NSString *)filename type:(PersistenceType)type{
-    if (OYOString(filename).length < 1) {
+    if (ZQString(filename).length < 1) {
         return nil;
     }
     if (type == PersistenceTypeUserDefaults) {
-        return [OYODefaults getForKey:filename];
+        return [ZQDefaults getForKey:filename];
     }else{
         NSString *filePath = [self pathSuffix:filename type:type];
         if (type == PersistenceTypeArchive) {
@@ -113,7 +113,7 @@
 
 + (void)removeData:(NSString *)filename type:(PersistenceType)type{
     if (type == PersistenceTypeUserDefaults) {
-        [OYODefaults removeForKey:filename];
+        [ZQDefaults removeForKey:filename];
     }else{
         
         NSString *filePath = [self pathSuffix:filename type:type];

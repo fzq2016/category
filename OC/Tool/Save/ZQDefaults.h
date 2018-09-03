@@ -1,5 +1,5 @@
 //
-//  OYODefaults.h
+//  ZQDefaults.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/7.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OYODefaults: NSObject
+@interface ZQDefaults: NSObject
 
 + (void)setObject:(NSObject *)value forKey:(NSString *)key;
 + (id)getForKey:(NSString *)key;

@@ -1,5 +1,5 @@
 //
-//  UIView+OYOIBInspectable.h
+//  UIView+ZQIBInspectable.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/21.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
-@interface UIView (OYOIBInspectable)
+@interface UIView (ZQIBInspectable)
 
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;

@@ -1,5 +1,5 @@
 //
-//  OYOConfigurationCenter.h
+//  ZQConfigurationCenter.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/12.
@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-@class OYOTabBarController;
+@class ZQTabBarController;
 /*
  * 此类用来适配 tabbar 和 navigationController 以及处理 相关协议  tabbarControllerDelegate 等
  */
 
-@interface OYOConfigurationCenter : NSObject<UITabBarControllerDelegate>
+@interface ZQConfigurationCenter : NSObject<UITabBarControllerDelegate>
 
-@property (nonatomic, strong) OYOTabBarController *tabbarController;
+@property (nonatomic, strong) ZQTabBarController *tabbarController;
 
 /**
     根控制器
@@ -26,7 +26,7 @@
 /**
     单例
 
- @return OYOConfigurationCenter
+ @return ZQConfigurationCenter
  */
 + (instancetype)sharedInstance;
 

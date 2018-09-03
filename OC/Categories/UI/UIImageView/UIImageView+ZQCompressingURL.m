@@ -1,16 +1,16 @@
 //
-//  UIImageView+UIImageView_CompressingURL.m
+//  UIImageView+ZQCompressingURL.m
 //  iOSBaseProject
 //
 //  Created by Felix on 04/12/15.
 //  Copyright © 2015 Felix. All rights reserved.
 //
 
-#import "UIImageView+UIImageView_CompressingURL.h"
+#import "UIImageView+ZQCompressingURL.h"
 #import "NSString+ZQContainString.h"
 
 
-@implementation UIImageView (UIImageView_CompressingURL)
+@implementation UIImageView (ZQCompressingURL)
 
 #pragma mark - Utility
 - (NSArray *)getAllCompressedURLforURL:(NSURL *)url{

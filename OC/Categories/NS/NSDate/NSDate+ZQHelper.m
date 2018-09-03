@@ -1,12 +1,12 @@
 //
-//  NSDate+Helper.m
+//  NSDate+ZQHelper.m
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/21.
 //  Copyright © 2018年 Felix. All rights reserved.
 //
 
-#import "NSDate+Helper.h"
+#import "NSDate+ZQHelper.h"
 
 /**
 常用时间格式
@@ -22,7 +22,7 @@ YYYYMMddHHmm
 
 **/
 
-@implementation NSDate (Helper)
+@implementation NSDate (ZQHelper)
 
 + (NSInteger)currentYear
 {

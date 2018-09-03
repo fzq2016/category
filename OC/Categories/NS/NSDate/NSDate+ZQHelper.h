@@ -1,5 +1,5 @@
 //
-//  NSDate+Helper.h
+//  NSDate+ZQHelper.h
 //  iOSBaseProject
 //
 //  Created by Felix on 2018/7/21.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (Helper)
+@interface NSDate (ZQHelper)
 
 + (NSInteger)currentYear;
 + (int)currentHour;
